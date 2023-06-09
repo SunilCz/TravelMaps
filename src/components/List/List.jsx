@@ -5,10 +5,8 @@ import useStyles from "./styles";
 import PlaceDetails from "../PlaceDetails/PlaceDetails";
 
 
- const List =({places, childClicked, isLoading}) => {
+ const List =({places, childClicked, isLoading, type, setType, Rating, setRating}) => {
     const classes = useStyles();
-    const [type, setType] = useState("restaurants");
-    const [Rating, setRating] = useState("restaurants");
     const [elRefs, setElRefs] = useState([]);
     useEffect(() => {
         const refs = Array(places?.length).fill().map((_, i) => elRefs[i] || createRef());
