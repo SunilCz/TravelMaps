@@ -40,8 +40,7 @@ import PlaceDetails from "../PlaceDetails/PlaceDetails";
                     <MenuItem value={3}>Above3.0</MenuItem>
                     <MenuItem value={4}>Above4.0</MenuItem>
                     <MenuItem value={4.5}>Above4.5</MenuItem>
-                    <MenuItem value="hotels">Hotels</MenuItem>
-                    <MenuItem value="attractions">Attractions</MenuItem>
+                    
 
                 </Select>
             </FormControl>
