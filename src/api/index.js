@@ -15,7 +15,7 @@ import axios from "axios";
           },
        
             headers: {
-              'X-RapidAPI-Key': '6b8abe2f87mshb47371af5b51597p1a54acjsn490746e910aa',
+              'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_API_KEY,
               'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
           }
         });
@@ -32,7 +32,7 @@ export const getWeatherData = async (lat, lng) => {
         const {data} = await axios.get('https://open-weather13.p.rapidapi.com/city/latlon/30.438/-89.1028',{
             params: { lat: lat, lon: lng },
             headers: {
-              'X-RapidAPI-Key': '6b8abe2f87mshb47371af5b51597p1a54acjsn490746e910aa',
+              'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_API_KEY,
               'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
             }
         });
